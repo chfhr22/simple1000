@@ -3,6 +3,17 @@
 npm install -g yarn  
 yarn create react-app .
 
+## git 화살표 폴더
+
+위 폴더중 최상위 디렉토리에 이미 .git이라는 파일이 생성되었는데, 해당 디렉토리에서도 push를 진행하는 과정에 .git 파일이 생겨서 발생하는 오류로
+
+```
+rm -rf .git
+git rm --cached . -rf
+```
+
+해당 폴더에 들어가서 명령어를 입력하면 git폴더와 캐쉬가 지워져서 정상적으로 돌아온다.
+
 ## client
 
 npx create-react-app .  
@@ -841,12 +852,12 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAtaca8d8rOrLcUO4lVEH4jzP2iY32dUcw",
+  apiKey: "",
   authDomain: "simple-blog-8365f.firebaseapp.com",
   projectId: "simple-blog-8365f",
   storageBucket: "simple-blog-8365f.appspot.com",
   messagingSenderId: "554544841722",
-  appId: "1:554544841722:web:6b0c6671d425866c6e1a43",
+  appId: "",
   measurementId: "G-MZ62ZKG9XL",
 };
 
